@@ -1,0 +1,6 @@
+@RsTaskManager.API_HostAddress = http://localhost:5083
+
+GET {{RsTaskManager.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
