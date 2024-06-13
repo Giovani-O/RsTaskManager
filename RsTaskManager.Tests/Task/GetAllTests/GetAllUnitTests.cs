@@ -1,7 +1,7 @@
 ﻿using RsTaskManager.Application.UseCases.Task.GetAll;
 using RsTaskManager.Communication.Responses;
 
-namespace RsTaskManager.Tests.Task.GetAllTests;
+namespace RsTaskManager.Application.Tests.Task.GetAllTests;
 
 public class GetAllUnitTests
 {

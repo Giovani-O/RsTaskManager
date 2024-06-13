@@ -2,7 +2,7 @@
 using RsTaskManager.Communication.Requests;
 using RsTaskManager.Communication.Responses;
 
-namespace RsTaskManager.Tests.Task.CreateTests;
+namespace RsTaskManager.Application.Tests.Task.CreateTests;
 
 public class CreateUnitTests
 {
@@ -29,7 +29,7 @@ public class CreateUnitTests
         Assert.IsType<ResponseTaskJson>(result);
     }
 
-    [Fact] 
+    [Fact]
     public void ShouldThrowArgumentNullException()
     {
         var request = new RequestTaskJson()
@@ -44,7 +44,8 @@ public class CreateUnitTests
         var exceptionType = typeof(ArgumentNullException);
         var useCase = new CreateTaskUseCase();
 
-        Assert.Throws(exceptionType, () => {
+        Assert.Throws(exceptionType, () =>
+        {
             useCase.Execute(request);
         });
     }
