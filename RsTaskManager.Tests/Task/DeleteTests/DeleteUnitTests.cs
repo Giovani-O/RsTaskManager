@@ -1,6 +1,6 @@
 ﻿using RsTaskManager.Application.UseCases.Task.Delete;
 
-namespace RsTaskManager.Tests.Task.DeleteTests;
+namespace RsTaskManager.API.Tests.Task.DeleteTests;
 
 public class DeleteUnitTests
 {
@@ -11,7 +11,8 @@ public class DeleteUnitTests
         var exceptionType = typeof(ArgumentNullException);
         var useCase = new DeleteTaskUseCase();
 
-        Assert.Throws(exceptionType, () => {
+        Assert.Throws(exceptionType, () =>
+        {
             useCase.Execute(id);
         });
     }

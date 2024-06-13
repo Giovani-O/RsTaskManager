@@ -1,7 +1,7 @@
 ﻿using RsTaskManager.Application.UseCases.Task.GetById;
 using RsTaskManager.Communication.Responses;
 
-namespace RsTaskManager.Tests.Task.GetByIdTests;
+namespace RsTaskManager.API.Tests.Task.GetByIdTests;
 
 public class GetByIdUnitTests
 {

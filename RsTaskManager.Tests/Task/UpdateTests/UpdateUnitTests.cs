@@ -1,7 +1,7 @@
 ﻿using RsTaskManager.Application.UseCases.Task.Update;
 using RsTaskManager.Communication.Requests;
 
-namespace RsTaskManager.Tests.Task.UpdateTests;
+namespace RsTaskManager.API.Tests.Task.UpdateTests;
 
 public class UpdateUnitTests
 {
