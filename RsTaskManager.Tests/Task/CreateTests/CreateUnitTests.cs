@@ -2,7 +2,7 @@
 using RsTaskManager.Communication.Requests;
 using RsTaskManager.Communication.Responses;
 
-namespace RsTaskManager.Application.Tests.Task.CreateTests;
+namespace RsTaskManager.Application.Testes.Task.CreateTests;
 
 public class CreateUnitTests
 {

@@ -1,6 +1,6 @@
 ﻿using RsTaskManager.Application.UseCases.Task.Delete;
 
-namespace RsTaskManager.Application.Tests.Task.DeleteTests;
+namespace RsTaskManager.Application.Testes.Task.DeleteTests;
 
 public class DeleteUnitTests
 {
