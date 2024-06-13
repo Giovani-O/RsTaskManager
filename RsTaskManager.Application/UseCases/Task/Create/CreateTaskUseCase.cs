@@ -5,10 +5,10 @@ namespace RsTaskManager.Application.UseCases.Task.Create;
 
 public class CreateTaskUseCase
 {
-    public ResponseRegisteredTaskJson Execute(RequestTaskJson request)
+    public ResponseTaskJson Execute(RequestTaskJson request)
     {
         // TODO
-        return new ResponseRegisteredTaskJson {
+        return new ResponseTaskJson {
             Id = request.Id,
             Name = request.Name,
             Description = request.Description,

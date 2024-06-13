@@ -2,7 +2,7 @@
 
 namespace RsTaskManager.Communication.Responses;
 
-public class ResponseRegisteredTaskJson
+public class ResponseTaskJson
 {
     public int Id { get; set; }
     public string Name { get; set; } = string.Empty;

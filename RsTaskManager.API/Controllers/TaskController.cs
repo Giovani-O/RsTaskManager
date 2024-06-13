@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using RsTaskManager.Application.UseCases.Task.Create;
 using RsTaskManager.Application.UseCases.Task.GetAll;
+using RsTaskManager.Application.UseCases.Task.GetById;
 using RsTaskManager.Communication.Requests;
 using RsTaskManager.Communication.Responses;
 
@@ -12,7 +13,7 @@ namespace RsTaskManager.API.Controllers;
 public class TaskController : ControllerBase
 {
     [HttpPost]
-    [ProducesResponseType(typeof(ResponseRegisteredTaskJson), StatusCodes.Status201Created)]
+    [ProducesResponseType(typeof(ResponseTaskJson), StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ResponseErrorsJson), StatusCodes.Status400BadRequest)]
     public IActionResult Create([FromBody] RequestTaskJson request)
     {
@@ -36,5 +37,21 @@ public class TaskController : ControllerBase
             return Ok(response);
         else
             return NoContent();
+    }
+
+    [HttpGet]
+    [Route("{id}")]
+    [ProducesResponseType(typeof(ResponseTaskJson), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ResponseErrorsJson), StatusCodes.Status404NotFound)]
+    public IActionResult GetById([FromRoute] int id)
+    {
+        var useCase = new GetByIdUseCase();
+
+        var response = useCase.Execute(id);
+
+        if (response is not null)
+            return Ok(response);
+        else
+            return NotFound();
     }
 }
