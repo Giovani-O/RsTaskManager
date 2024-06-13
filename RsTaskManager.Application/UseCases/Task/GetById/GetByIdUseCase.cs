@@ -6,6 +6,9 @@ public class GetByIdUseCase
 {
     public ResponseTaskJson Execute(int id)
     {
+        if (id <= 0)
+            throw new ArgumentNullException(nameof(id));
+
         return new ResponseTaskJson
         {
             Id = id,
