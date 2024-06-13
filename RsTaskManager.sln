@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RsTaskManager.Communication
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RsTaskManager.Application", "RsTaskManager.Application\RsTaskManager.Application.csproj", "{2292ADB1-9099-4E75-A0EA-8A6A10C37031}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RsTaskManager.Application.Testes", "RsTaskManager.Tests\RsTaskManager.Application.Testes.csproj", "{EFF9A951-7112-49C3-9605-D8ECA57DB435}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RsTaskManager.Application.Tests", "RsTaskManager.Application.Tests\RsTaskManager.Application.Tests.csproj", "{EFF9A951-7112-49C3-9605-D8ECA57DB435}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
