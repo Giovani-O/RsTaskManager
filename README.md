@@ -6,6 +6,7 @@ Esta solução usa .NET 8.
 
 Após clonar o repositório em sua máquina, abra a solução no Visual Studio e pressione `F5`, ou clique no botão `Start Debugging`:  
 ![image](https://github.com/Giovani-O/RsTaskManager/assets/50748653/c3778ecc-39dc-46f2-af9a-5cc6e1f6657c)  
+Certifique-se de que o projeto selecionado é RsTaskManager.API  
 
 Para executar a solução na linha de comando, acesse o diretório `RsTaskManager/RsTaskManager.API` e execute o comando `dotnet watch run`.  
 
