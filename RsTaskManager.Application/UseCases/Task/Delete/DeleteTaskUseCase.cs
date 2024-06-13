@@ -4,6 +4,7 @@ public class DeleteTaskUseCase
 {
     public void Execute(int id)
     {
-
+        if (id <= 0)
+            throw new ArgumentNullException(nameof(id));
     }
 }

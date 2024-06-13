@@ -14,7 +14,7 @@ public class CreateUnitTests
         {
             Id = 1,
             Name = "Teste unitário",
-            Description = "Deve retornar 201",
+            Description = "Deve retornar ResponseTaskJson",
             Priority = Communication.Enums.TaskPriority.High,
             Deadline = new DateTime(year: 2024, month: 7, day: 15),
             Status = Communication.Enums.TaskStatusCode.InExecution
@@ -36,7 +36,7 @@ public class CreateUnitTests
         {
             Id = 1,
             Name = "",
-            Description = "Deve retornar 201",
+            Description = "Deve lançar uma exceção",
             Priority = Communication.Enums.TaskPriority.High,
             Deadline = new DateTime(year: 2024, month: 7, day: 15),
             Status = Communication.Enums.TaskStatusCode.InExecution

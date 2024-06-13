@@ -23,8 +23,6 @@
   <ItemGroup>
     <Folder Include="Task\GetAllTests\" />
     <Folder Include="Task\GetByIdTests\" />
-    <Folder Include="Task\DeleteTests\" />
-    <Folder Include="Task\UpdateTests\" />
   </ItemGroup>
 
   <ItemGroup>
