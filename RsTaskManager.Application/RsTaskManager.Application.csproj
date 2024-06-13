@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="UseCases\Task\Delete\" />
-    <Folder Include="UseCases\Task\Update\" />
   </ItemGroup>
 
   <ItemGroup>

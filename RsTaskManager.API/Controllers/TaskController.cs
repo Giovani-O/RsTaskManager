@@ -1,9 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using RsTaskManager.Application.UseCases.Task.Create;
 using RsTaskManager.Application.UseCases.Task.GetAll;
 using RsTaskManager.Application.UseCases.Task.GetById;
+using RsTaskManager.Application.UseCases.Task.Update;
 using RsTaskManager.Communication.Requests;
 using RsTaskManager.Communication.Responses;
 
@@ -53,5 +52,18 @@ public class TaskController : ControllerBase
             return Ok(response);
         else
             return NotFound();
+    }
+
+    [HttpPut]
+    [Route("{id}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(typeof(ResponseErrorsJson), StatusCodes.Status400BadRequest)]
+    public IActionResult Update([FromRoute] int id, [FromBody] RequestTaskJson request)
+    {
+        var useCase = new UpdateTaskUseCase();
+
+        useCase.Execute(id, request);
+
+        return NoContent();
     }
 }
